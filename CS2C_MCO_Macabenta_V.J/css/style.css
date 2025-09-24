@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #3333337a;   
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav a{
+    font-weight: bold;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+/* Main div */
+.container > div {
+    flex: 3;
+    padding: 20px;
+}
+
+/* Skills & Hobbies */
+.skills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    flex: 1; /* all cards take equal space */
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.skill-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Activities */
+.activities-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.activity-card {
+    flex: 1; /* fill row equally */
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.activity-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* Aside */
+aside {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.birthday {
+    color: red;
+    font-weight: bold;
+}
+
+.container ul, a{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer input, footer textarea {
+    width: 80%;
+    margin-bottom: 10px;
+}

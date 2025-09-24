@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">INTRODUCTION</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#skills">HOBBIES</a></li>
+                <li><a href="#activities">WEBDEV ACTIVITIES</a></li>
+                <li><a href="product_feature.html">PRODUCT FEATURE</a></li>
+                <li><a href="product_gallery.html">PRODUCT PAGE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Aside FIRST so it shows on the LEFT -->
+       <aside>
+            <h3>My Birth Month Calendar</h3>
+            <p><strong>September 2006</strong></p>
+            <table class="calendar">
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th>
+                    <th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td>
+                    <td></td><td>1</td><td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td><td>4</td><td>5</td><td>6</td>
+                    <td>7</td><td>8</td><td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td><td>11</td><td>12</td><td>13</td>
+                    <td>14</td><td class="birthday">15</td><td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td><td>18</td><td>19</td><td>20</td>
+                    <td>21</td><td>22</td><td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td><td>25</td><td>26</td><td>27</td>
+                    <td>28</td><td>29</td><td>30</td>
+                </tr>
+            </table>
+
+            <h3>My GitHub</h3>
+            <ul>
+                <li><a href="https://github.com/Vhardey/WD1-LPrac1.git">Project 1</a></li>
+                <li><a href="https://github.com/Vhardey/WD1-P2.git">Project 2</a></li>
+                <li><a href="https://github.com/Vhardey/WD1-L2-2C.git">Project 3</a></li>
+            </ul>            
+        </aside>
+
+
+        <!-- Main body -->
+        <div>
+            <div id="intro">
+                <h2>Self Introduction</h2>
+                <img src="img/my-portrait.jpg" alt="My Photo" width="150">
+                <p>My name is Vhardey John Macabenta. I'm a 19-year-old BSCS student currently 
+                    in my second year of college. I've always been curious about technology and 
+                    how things work, which is why I chose Computer Science. Right now, I'm 
+                    focusing on building my skills in programming and web development while 
+                    preparing myself for future opportunities in the tech industry.</p>
+            </div>      
+
+            <div id="about">
+                <h2>About Me</h2>
+                <p>I'm Vhardey John Macabenta, a 19-year-old BSCS student in my second year. I've always been
+                    curious about technology and enjoy learning new things about computers and
+                    programming. I also love gaming, which has been a big influence on how I
+                    think and approach challenges. Right now, I'm focused on improving myself, 
+                    building my skills, and finding better ways to live life while enjoying
+                    the process.</p>
+            </div>
+            
+            <div id="skills">
+                <h2>Skills & Hobbies</h2>
+                <div class="skills-wrap">
+                    <div class="skill-card">
+                        <img src="img/hobby1.jpg" alt="Gaming">
+                        <p><b>GAMING</b></p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="img/hobby2.jpg" alt="Skill 2">
+                        <p><b>RUNNING</b></p>
+                    </div>
+                    <div class="skill-card">
+                        <img src="img/hobby3.jpg" alt="Skill 3">
+                        <p><b>ANIME</b></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="activities">
+                <h2>WebDev Activities</h2>
+                <div class="activities-wrap">
+                    <div class="activity-card">
+                        <img src="img/activity1.png" alt="Activity 1">
+                        <p>Navigation bar and indexing.</p>
+                    </div>  
+                    <div class="activity-card">
+                        <img src="img/activity2.png" alt="Activity 2">
+                        <p>Internal CSS practice.</p>
+                    </div>
+                    <div class="activity-card">
+                        <img src="img/activity3.png" alt="Activity 3">
+                        <p>Heading tags and hyperlink.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <form class="footer-form" onsubmit="return submitFooterForm(event)">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <input type="text" id="message" name="message" required><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+        <p>Developer: <br>CS2C <br>
+            Vhardey John Macabenta
+    </footer>
+
+    <script src="js/file.js"></script>
+
+</body>
+</html>
